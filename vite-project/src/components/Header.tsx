@@ -1,4 +1,5 @@
-import { SetNavWomenOpened, GetNavWomenOpened} from '../function/Scripts.tsx'
+
+import { useState, useEffect } from 'react'
 import logoMain from '../../public/logo_aura.png'
 import IMGSearch from '../../public/search.png'
 import IMGShop from '../../public/shop.png'
@@ -6,10 +7,26 @@ import IMGLike from '../../public/like.png'
 import IMGMe from '../../public/me.png'
 
 const Header: React.FC = () => {
-    const OnClickNavWomen = () =>{
-        SetNavWomenOpened(true)
-     
+
+    const [blockOpened, setBlockOpened] = useState<boolean>()
+
+    const OnClickNavWomen = () => {
+      setBlockOpened(true)
     }
+
+    const navWomenBlock = () => {
+      if(blockOpened === true){
+        return(<>
+        <div className='background'>
+          {/*Дальше тут код пропишешь*/}
+        </div>
+        </>)
+      }
+      else{
+        return(<></>)
+      }
+    }
+
 return (<>
 <header>
   <span className="grid-item-list NavMain">
@@ -40,6 +57,8 @@ return (<>
 
  
 </header>
+
+{navWomenBlock()}
 
 </>)
 }

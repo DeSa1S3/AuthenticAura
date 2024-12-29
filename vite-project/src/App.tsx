@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { SetNavWomenOpened, GetNavWomenOpened} from './function/Scripts.tsx'
 import Header from './components/Header.tsx'
 import IMGKID_1 from '../public/KidForTheCold_img4.jpg'
 import IMGKID_2 from '../public/KidForTheCold_img1.jpg'
@@ -15,24 +14,17 @@ import IMGPresentation from '../public/colections.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
-  const navWomen = () =>{
-    if(GetNavWomenOpened() === true){
-      alert()
-      return(<>
-      <div className='background'></div>
-      </>)
-    }
-    else{
-      return(<></>)
-    }
-  }
+
   return (
     <>  
     <Header/>
 
-  {navWomen()}
+
   <div className="PresentationOfTheCollection">   
-    {/* <img src={IMGPresentation} alt="" className='IMGPresentation'/> */}
+
+
+
+    <img src={IMGPresentation} alt="" className='IMGPresentation'/>
     <h3 className='Presentation-minititle'>ЗИМНЯЯ РАСПРОДАЖА СКИДКИ ДО 60%</h3>
     <p className='Presentation-text'>Приготовьтесь к большим целям в 2025 году только для некоторых стилей</p>
         <a href="">
