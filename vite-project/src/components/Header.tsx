@@ -31,15 +31,15 @@ return (<>
 <header>
   <span className="grid-item-list NavMain">
    
-      <h1 className='grid-item TitleMain'>AuthenticAura</h1>
+      <span className='grid-item TitleMain'>AuthenticAura</span>
       <img src={logoMain} className="grid-item logoMain" alt="" />
    
-      <p className='NavMainWomen' onClick={OnClickNavWomen}>Женщины</p>
+      <span className='NavMainWomen' onClick={OnClickNavWomen}>Женщины</span>
   
-      <p className='NavMainMen'>Мужчины</p>
+      <span className='NavMainMen'>Мужчины</span>
    
   
-      <p className='NavMainAccessory'>Аксессуары</p>
+      <span className='NavMainAccessory'>Аксессуары</span>
     
    
       <img src={IMGSearch} className='grid-item IMGSearch' alt="" />
