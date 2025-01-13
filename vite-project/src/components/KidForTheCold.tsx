@@ -5,8 +5,8 @@ import IMGKID_2 from '../../public/KidForTheCold_img1.jpg'
 import IMGKID_3 from '../../public/KidForTheCold_img2.jpg'
 import IMGKID_4 from '../../public/KidForTheCold_img3.jpg'
 
-const navigate = useNavigate();
 const KidForTheCold: React.FC = () => {
+const navigate = useNavigate();
 return (<>
         <h2 className='KidForTheCold_title'>МАГАЗИН РАСПРОДАЖА МУЖСКОЙ ОДЕЖДЫ</h2>
       <div className='KidForTheCold-btn'>ПОСМОТРЕТЬ ПОЛНОСТЬЮ</div>

@@ -34,58 +34,58 @@ const router = createBrowserRouter([
       ),
   },
   {
-    path: '/Tops',
-    element: (
-        <Tops/>
-    ),
+      path: '/Tops',
+      element: (
+          <Tops/>
+      ),
   },
   {
-    path: '/TrousersMen',
-    element: (
-        <TrousersMen/>
-    ),
+      path: '/TrousersMen',
+      element: (
+          <TrousersMen/>
+      ),
   },
   {
-    path: '/SweatshirtsW',
-    element: (
-        <SweatshirtsW/>
-    ),
+      path: '/SweatshirtsW',
+      element: (
+          <SweatshirtsW/>
+      ),
   },
   {
-    path: '/SweatshirtsM',
-    element: (
-        <SweatshirtsM/>
-    ),
+      path: '/SweatshirtsM',
+      element: (
+          <SweatshirtsM/>
+      ),
   },
   {
-    path: '/Leggings',
-    element: (
-        <Leggings/>
-    ),
+      path: '/Leggings',
+      element: (
+          <Leggings/>
+      ),
   },
   {
-    path: '/TShirt',
-    element: (
-        <TShirt/>
-    ),
+      path: '/TShirt',
+      element: (
+          <TShirt/>
+      ),
   },
   {
-    path: '/Shorts',
-    element: (
-        <Shorts/>
-    ),
+      path: '/Shorts',
+      element: (
+          <Shorts/>
+      ),
   },
   {
-    path: '/Me',
-    element: (
-        <ME/>
-    ),
+      path: '/Me',
+      element: (
+          <ME/>
+      ),
   },
   {
-    path: '/Register',
-    element: (
-        <Register/>
-    ),
+      path: '/Register',
+      element: (
+          <Register/>
+      ),
   },
 ]);
 

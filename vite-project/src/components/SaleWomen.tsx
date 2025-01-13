@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import IMGSALEW_1 from '../../public/SaleWomen-img4.png'
-import IMGSALEW_2 from '../../public/SaLeWomen-img1.jpg'
+import IMGSALEW_2 from '../../public/SaleWomen-img1.jpg'
 import IMGSALEW_3 from '../../public/SaleWomen-img2.jpg'
 import IMGSALEW_4 from '../../public/SaleWomen-img3.jpg'
 import { useNavigate } from 'react-router-dom'
-const navigate = useNavigate();
+
 const SaleWomen: React.FC = () => {
+const navigate = useNavigate();
 return (<>
     <h2 className='SaleWomen_title'>МАГАЗИН РАСПРОДАЖА ЖЕНСКОЙ ОДЕЖДЫ</h2>
     <div className='SaleWomen-btn'>ПОСМОТРЕТЬ ПОЛНОСТЬЮ</div>
