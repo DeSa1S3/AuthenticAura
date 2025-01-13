@@ -1,92 +1,101 @@
 #root 
-  max-width: 1280px
-  margin: 0 
+  width: 100%
+  height: 100%
+  margin: 0
 a
   text-decoration: none
 header 
-  position: fixed либо absolute
   margin: 0px 0px
   width: 100%
   height: 100px
-
-
-.grid-item-list 
-  display: inline-block
+.BtnArea
+  display: flex
   flex-direction: row
-
-/* Дополнительные стили для элементов, если необходимо */
+  width: 0px
+  height: 100px
+  left: 530px
+  bottom: 50px
+  position: relative
+  
+.grid-item-list 
+  width: 100%
+  height: 100px
+  position: absolute
+  flex-direction: row
 .TitleMain 
   font-family: "Playfair Display", serif
   font-weight: 550
-  padding-bottom:  50px
   padding-left: 65px
   color: black
   font-size: 34px 
-
+  position: relative
+  user-select: none
+  top: 5px
 .logoMain 
   position: absolute
   top: -5px
-  left: 280px
+  left: 270px
   padding-left: 20px
   width: 60px
   height: 60px
+  user-select: none
+.NavSpanBtn
+  position: relative
+  height: 50px
+  width: 150px
+  text-align: center
+  margin-left: 50px
+  margin-top: 10px
 .NavMainWomen
   position: relative
   font-family: "Playfair Display", serif
   font-weight: weight
   font-size: 20px
-  color: black
-  padding-bottom: 100px
-  padding-left: 280px
-
+  color: black 
 .NavMainMen
   position: relative
   font-family: "Playfair Display", serif
   font-weight: weight
-  margin-bottom: 70px
   font-size: 20px
   color: black
-  padding-left: 50px
 .NavMainAccessory
   position: relative
   font-family: "Playfair Display", serif
   font-weight: weight
-  margin-bottom: 70px
   font-size: 20px
   color: black
-  padding-left: 50px
 .IMGSearch 
   position: relative
-  left: 270px  
-  top: 10px
+  left: 260px  
+  top: 15px
   width: 40px /* Пример ширины для иконок */
   height: 40px /* Автоматическая высота для сохранения пропорций */
 .IMGShop 
   position: relative
-  left: 300px 
-  top: 10px
+  left: 280px 
+  top: 15px
   width: 40px /* Пример ширины для иконок */
   height: 40px /* Автоматическая высота для сохранения пропорций */
 .IMGLike
   position: relative
-  left: 330px
-  top: 10px
+  left: 310px
+  top: 15px
   width: 40px /* Пример ширины для иконок */
   height: 40px /* Автоматическая высота для сохранения пропорций */
 .IMGMe
   position: relative
-  left: 330px
-  top: 10px
+  left: 300px
+  top: 15px
   padding-left: 40px
   width: 40px /* Пример ширины для иконок */
   height: 40px /* Автоматическая высота для сохранения пропорций */
 /* Стили для изображения презентации */
 .PresentationOfTheCollection 
   position: relative
-  width: 118.7%
+  width: 100%
 
 .IMGPresentation 
-  width: 99% 
+  width: 100% 
   height: auto 
 
 .Presentation-minititle
@@ -123,339 +132,398 @@ header
   height: 40px  
   border: none
   border-radius: 5.6rem
+.KidForTheCold
+  width: 100%
+  height: 500px
+  display: flex
+  flex-direction: row
 .KidForTheCold_title
-  padding-top: 100px
-  padding-left: 70px
-  color: black
+  padding-left: 60px
 .KidForTheCold-btn
+  margin-left: 60px
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  font-weight: weight
+  font-weight: 550
   border: none
   font-size: 17px
+  background-color: whitex
   text-decoration: underline
-  padding-left: 70px
-.KidForTheCold_Img-1
-  width: 300px
-  height: 400px
-  padding-left: 70px
-  padding-top: 30px 
-.KidForTheCold_Img-2
-  width: 300px
-  padding-left: 20px
-  height: 400px
-.KidForTheCold_Img-3
+.KidForTheCold-item
   position: relative
-  left: 20px
-  width: 300px
+  display: flex
+  flex: none
+  flex-direction: column
+  background-color: green
+  width: 310px
   height: 400px
-.KidForTheCold_Img-4
-  position: relative
-  top: -405px
-  left: 1040px
-  width: 300px
+  margin-left: 58px
+  margin-top: 30px 
+.KidForTheCold_Btn
+  position: absolute
+  margin-top: 350px
+  margin-left: 30px
+  background-color: white
+  border-radius: 5.6rem
+  font-weight: 650
+  padding: 8px 
+  font-size: 15px
+.KidForTheCold_Text
+  position: absolute
+  margin-top: 310px
+  color: white
+  font-size: 22px
+  font-weight: 550
+  margin-left: 30px
+.KidForTheCold_Img
+  width: 310px
   height: 400px
-.KidForTheCold_Btn-1
+.KidForTheCold-grad
   position: absolute
-  top: 1250px
-  left: 80px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-.KidForTheCold_Btn-2
-  position: absolute
-  top: 1260px
-  left: 400px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-.KidForTheCold_Btn-3
-  position: absolute
-  top: 1260px
-  left: 720px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550 
-  border-radius: 5.6rem
-  border: 0
-.KidForTheCold_Btn-4
-  position: absolute
-  top: 1260px
-  left: 1050px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-.KidForTheCold_Text-2
-  position: absolute
-  top: 1195px
-  left: 405px 
-  font-size: 24px
-  color: white
-  font-weight: 550
-.KidForTheCold_Text-3
-  position: absolute
-  top: 1195px
-  left: 725px 
-  font-size: 24px
-  color: white
-  font-weight: 550
-.KidForTheCold_Text-4
-  position: absolute
-  top: 1195px
-  left: 1055px 
-  font-size: 24px
-  color: white
-  font-weight: 550
+  width: 100%
+  height: 100%
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent)
+
+.SaleWomen
+  width: 100%
+  height: 500px
+  display: flex
+  flex-direction: row
 .SaleWomen_title
-  position: relative
-  top: -250px
-  padding-left: 70px
-  color: black
+  padding-left: 60px
 .SaleWomen-btn
-  position: relative
-  top: -250px
+  margin-left: 60px
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  font-weight: weight
+  font-weight: 550
   border: none
   font-size: 17px
+  background-color: whitex
   text-decoration: underline
-  padding-left: 70px
-.SaleWomen_Img-1
+.SaleWomen-item
   position: relative
-  top: -220px
-  width: 300px
+  display: flex
+  flex: none
+  flex-direction: column
+  background-color: green
+  width: 310px
   height: 400px
-  padding-left: 70px 
-.SaleWomen_Img-2
-  position: relative
-  top: -220px
-  right: 135px
-  width: 300px
+  margin-left: 58px
+  margin-top: 30px 
+.SaleWomen_Btn
+  position: absolute
+  margin-top: 350px
+  margin-left: 30px
+  background-color: white
+  border-radius: 5.6rem
+  font-weight: 650
+  padding: 8px 
+  font-size: 15px
+.SaleWomen_Text
+  position: absolute
+  margin-top: 310px
+  color: white
+  font-size: 22px
+  font-weight: 550
+  margin-left: 30px
+.SaleWomen_Img
+  width: 310px
   height: 400px
-.SaleWomen_Img-3
+.SaleWomen-grad
+  position: absolute
+  width: 100%
+  height: 100%
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent)
+
+.popular_katalog
+  width: 100%
+  height: 500px
+  display: flex
+  flex-direction: row
+.popular_katalog_title
+  padding-left: 60px
+.popular_katalog-btn
+  margin-left: 60px
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-weight: 550
+  border: none
+  font-size: 17px
+  background-color: whitex
+  text-decoration: underline
+.popular_katalog-item
   position: relative
-  bottom: 635px
-  left: 720px
-  width: 300px
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 310px
+  height: 550px 
+  margin-left: 58px
+  margin-top: 30px 
+.popular_katalog_btn
+  position: absolute
+  margin-top: 550px
+  margin-left: 10px
+  background-color: white
+  border-radius: 5.6rem
+  font-weight: 650
+  padding: 8px 
+  font-size: 15px
+  border: 1px solid black
+.popular_katalog_text
+  position: absolute
+  margin-top: 440px
+  color: black
+  font-size: 16px
+  font-weight: 550
+  margin-left: 5px
+.popular_katalog_img
+  width: 310px
   height: 400px
-.SaleWomen_Img-4
-  position: relative
-  top: -635px
+.popular_katalog-minititle
+  position: absolute
+  padding-left: 5px
+  margin-top: 410px
+.best-katalog
+  margin-top: 200px
+  width: 100%
+  height: 500px
+.best-katalog-img
+  width: 100%
+  height: 500px
+.best-katalog-title
+  position: absolute
+  top: 2760px
   left: 590px
-  width: 300px
-  height: 400px
-.SaleWomen_Btn-1
-  position: relative 
-  top: -245px
-  right: 290px
-  font-size: 16px
-  padding: 10px
   color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-.SaleWomen_Btn-2
-  position: relative
-  top: -240px
-  right: 100px
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-  z-index: 1
-.SaleWomen_Btn-3
-  position: relative
-  top: -655px
-  left: 105px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550 
-  border-radius: 5.6rem
-  border: 0
-  z-index: 1
-.SaleWomen_Btn-4
-  position: relative
-  top: -655px
-  left: 300px 
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-  border: 0
-  z-index: 1
-.SaleWomen_Text-2
+.best-katalog-text
   position: absolute
-  top: 1890px
-  left: 410px 
-  font-size: 24px
-  color: white
-  font-weight: 550
-.SaleWomen_Text-3
+  top: 2810px
+  left: 645px
+  color: black
+  font-size: 18px
+.best-katalog-btn
   position: absolute
-  top: 1890px
-  left: 740px 
-  font-size: 24px
-  color: white
-  font-weight: 550
-.SaleWomen_Text-4
+  top: 2880px
+  left: 710px
+  background-color: white
+  border-radius: 5.6rem
+  font-weight: 650
+  padding: 8px 
+  font-size: 15px
+  border: 1px solid black
+.shorts-list-title
+  margin-top: 80px
+  margin-left: 60px
+.shorts-list
+  width: 100%
+  height: 650px
+  display: flex
+  flex-direction: row
+.shorts-list-item
+  position: relative
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 310px
+  height: 550px 
+  margin-left: 58px
+  margin-top: 30px 
+.shorts-list-minititle
   position: absolute
-  top: 1890px
-  left: 1060px 
-  font-size: 24px
-  color: white
+  top: 375px
+  left: 15px
+  color: black
+.shorts-list-text
+  position: absolute
+  top: 440px
+  left: 15px
+  color: black
+  font-size: 16px
   font-weight: 550
+.shorts-list-btn
+  position: absolute
+  top: 560px
+  left: 15px
+  background-color: white
+  border-radius: 5.6rem
+  font-weight: 650
+  padding: 8px 
+  font-size: 15px
+  border: 1px solid black
+.AboutMen
+  padding-top: 70px
+.AboutMen-title
+  padding-left: 60px  
+  font-size: 32px 
+  color: black
+.AboutMen-text
+  padding-left: 60px 
+  font-size: 15px
+  color: black
+.AboutMen-minititle
+  padding-left: 60px
+  font-size: 20px
+  color: black
+.Footer
+  border-top: 1px solid black
+  width: 100%
+  height: 200px
+  display: flex
+  flex-direction: row
+.Footer-item
+  position: relative
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 310px
+  height: 150px 
+  margin-left: 58px
+.Footer-title
+  padding-top: -20px
+.Footer-text
+  text-decoration: underline
+  padding-top: -10px
+  font-size: 15px
+  color: black
 .background 
   position: absolute
   left: 0
   top: 0
   height: 400px
   width: 100%
-  background-color: red
+  background-color: white
   margin-top: 100px
   padding: 0
   z-index: 1
-.popular_katalog
-  display: inline-block
-  flex-direction: row
-  position: relative
-  top: -510px
-.popular_katalog_title 
-  padding-left: 70px
-.popular_katalog_img-1
-  position: relative
-  left: 70px
-  width: 300px
-  height: 400px
-.popular_katalog_img-2
-  position: relative
-  bottom: 560px
-  left: 238px
-  width: 300px
-  height: 400px
-.popular_katalog_img-3
-  position: relative
-  bottom: 1150px
-  left: 567px
-  width: 300px
-  height: 400px
-.popular_katalog_img-4
-  position: relative
-  bottom: 1745px
-  left: 892px
-  width: 300px
-  height: 400px
-.popular_katalog-minititle-1
-  position: relative
-  bottom: 15px
-  left: 70px
-.popular_katalog-minititle-2
-  position: relative
-  bottom: 588px
-  left: 400px
-.popular_katalog-minititle-3
-  position: relative
-  bottom: 1180px
-  left: 725px
-.popular_katalog-minititle-4
-  position: relative
-  bottom: 1775px
-  left: 1050px
-.popular_katalog_text-1
-  position: relative
-  left: 70px
-  bottom: 30px
-  max-width: 300px
-.popular_katalog_text-2
-  position: relative
-  left: 400px
-  bottom: 600px
-  max-width: 300px
-.popular_katalog_text-3
-  position: relative
-  left: 725px
-  bottom: 1195px
-  max-width: 300px
-.popular_katalog_text-4
-  position: relative
-  left: 1050px
-  bottom: 1790px
-  max-width: 300px
-.popular_katalog_btn-1
-  position: relative 
-  bottom: 370px
-  left: 70px
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-.popular_katalog_btn-2
-  position: relative 
-  bottom: 960px
-  left: 400px
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-.popular_katalog_btn-3
-  position: relative 
-  bottom: 1550px
-  left: 720px
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-.popular_katalog_btn-4
-  position: relative 
-  bottom: 1745px
-  left: 1053px
-  font-size: 16px
-  padding: 10px
-  color: black
-  font-weight: 550
-  border-radius: 5.6rem
-.best-katalog
-  position: relative
-  bottom: 2200px
-.best-katalog-img
-  width: 118.6%
-  height: 100%
-.best-katalog-title
+.line
   position: absolute
-  bottom: 310px
-  left: 555px
-  color: black
-  font-size: 26px
-.best-katalog-text
-  position: absolute
-  bottom: 270px
-  left: 615px
-  color: black
-  font-size: 20px
-.best-katalog-btn
-  position: absolute
-  bottom: 220px
-  left: 700px
-  font-size: 16px
-  padding: 10px
-  color: white
+  margin-left: 50px
+  left: 0px
+  z-index: 1
   background-color: black
-  font-weight: 550
-  border-radius: 5.6rem
+  width: 100%
+  height: 2px
+.line.open
+  animation: down_line 0.5s forwards
+.line.closed
+  animation: down_line_closed 0.5s forwards
+  
+@keyframes down_line
+  0%
+    width: 0px
+    margin-left: 50% 
+  100%
+    width: 100%
+    margin-left: 0%
 
+@keyframes down_line_closed
+  0%
+    width: 100%
+    margin-left: 0%
+  100%
+    width: 0px
+    margin-left: 50%
+.Women
+  border-top: 1px solid black
+  border-bottom: 1px solid black
+  width: 100%
+  position: relative
+  top: -30px
+  height: 400px
+  display: flex
+  flex-direction: row
+.Women-item
+  position: relative
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 200px
+  height: 150px 
+  margin-left: 20px
+.title-Women
+  position: relative
+  top: -10px
+  left: 90px
+  color: black
+.text-Women
+  position: relative
+  color: black
+  left: 90px
+  padding: -10px
+  margin: 0px
+  margin-top: 10px
+.img-Women
+  width:  300px
+  height: 200px
+  margin-left: 200px
+  margin-top: 70px
+.Men
+  border-top: 1px solid black
+  border-bottom: 1px solid black 
+  width: 100%
+  position: relative
+  top: -30px
+  height: 400px
+  display: flex
+  flex-direction: row
+.Men-item
+  position: relative
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 200px
+  height: 150px 
+  margin-left: 20px
+.title-Men
+  position: relative
+  top: -10px
+  left: 90px
+  color: black
+.text-Men
+  position: relative
+  color: black
+  left: 90px
+  padding: -10px
+  margin: 0px
+  margin-top: 10px
+.img-Men
+  width:  300px
+  height: 200px
+  margin-left: 200px
+  margin-top: 70px
+.Accessory
+  border-top: 1px solid black
+  border-bottom: 1px solid black  
+  width: 100%
+  position: relative
+  top: -30px
+  height: 400px
+  display: flex
+  flex-direction: row
+.Accessory-item
+  position: relative
+  display: flex
+  flex: none
+  flex-direction: column
+  width: 200px
+  height: 150px 
+  margin-left: 20px
+.title-Accessory
+  position: relative
+  top: -10px
+  left: 90px
+  color: black
+.text-Accessory
+  position: relative
+  color: black
+  left: 90px
+  padding: -10px
+  margin: 0px
+  margin-top: 10px
+.img-Accessory
+  width:  300px
+  height: 200px
+  margin-left: 200px
+  margin-top: 70px
+.text-Men.text-dec
+  text-decoration: underline
+.text-Women.text-dec
+  text-decoration: underline
 
