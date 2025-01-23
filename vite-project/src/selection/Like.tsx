@@ -12,7 +12,12 @@ function Like() {
   return (
     <>  
     <Header/>
-
+    <div className="Like">
+      <h1 className='title'>Сохранить в списке желаний</h1>
+      <p className='text'>Вы когда-нибудь хотели сохранить все свои любимые модели и аксессуары в одном месте, чтобы вернуться к ним позже? Почти как ✨список желаний ✨.</p>
+      <button className='btn-1'  onClick={()=>(navigate('/Register'))}>Зарегистрироваться</button>
+      <button className='btn-2'  onClick={()=>(navigate('/Me'))}>Авторизоваться</button>
+    </div>
     <Footer/>
     </> 
     

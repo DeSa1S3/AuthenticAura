@@ -1,18 +1,19 @@
 import { useState } from 'react'
-import './Shop.sass'
+import './Support.sass'
+import logo from '../../public/logo_aura.png'
 import Header from '../components/Header.tsx'
 import Footer from '../components/Footer.tsx'
 import { useNavigate } from 'react-router-dom'
 
 
 
-function Shop() {
+function Support() {
   const [count, setCount] = useState(0)
   const navigate = useNavigate();
   return (
     <>  
     <Header/>
-
+    
     <Footer/>
     </> 
     
@@ -20,4 +21,4 @@ function Shop() {
 }
 
 
-export default Shop
+export default Support

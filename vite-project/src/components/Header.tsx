@@ -7,6 +7,8 @@ import IMGMe from '../../public/me.png'
 import ImgWomen from '../../public/img-Women.png'
 import ImgMen from '../../public/img-Men.png'
 import IMGAccessory from '../../public/img-Accessory.png'
+import Shopimg from '../../public/TrousersM/TS1.jpg'
+import KorzinaIMG from '../../public/korzina.png'
 import { useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
@@ -19,7 +21,7 @@ const Header: React.FC = () => {
 
     const OnHoveredNav = (index:number)=>{
 
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 5; i++) {
         if (index != i) {
           setAnimHover(prev=>{
             prev[i]=(prev[i]=false)
@@ -39,6 +41,9 @@ const Header: React.FC = () => {
       OnClickNavWomen()
       OnClickNavMen()
       OnClickNavMainAccessory()
+      OnClickNavShop()
+      
+
     }
     const NavJSX = (index:number)=>{
       if(AnimHover[index]){
@@ -57,7 +62,7 @@ const Header: React.FC = () => {
     },[AnimHover])
     const onMouseOverNav = () =>{
       setBlockOpened(false)
-      for(let i = 0; i<3;i++){
+      for(let i = 0; i<5;i++){
       setAnimHover(prev=>{
         prev[i]=(prev[i]=false)
         return prev
@@ -73,6 +78,10 @@ const Header: React.FC = () => {
     const OnClickNavMainAccessory = () => {
       setBlockOpened(true)
     }
+    const OnClickNavShop = () => {
+      setBlockOpened(true)
+    }
+    
 
     const navMainAccessory = ()=>{
       return (<>
@@ -156,7 +165,7 @@ const Header: React.FC = () => {
                 <p className='text-Men'>Куртки</p>
                 <p onClick={()=>(navigate('/SweatshirtsM'))}  className='text-Men text-dec'>Толстовки</p>
                 <p onClick={()=>(navigate('/Shorts'))} className='text-Men text-dec'>Шорты</p>
-                <p onClick={()=>(navigate('/Trousers'))} className='text-Men text-dec'>Штаны</p>
+                <p onClick={()=>(navigate('/TrousersMen'))} className='text-Men text-dec'>Штаны</p>
                 <p className='text-Men'>Спортивные Штаны</p>
                 <p className='text-Men'>Майки</p>
               </div>
@@ -235,10 +244,35 @@ const Header: React.FC = () => {
       </div>   
         </>)
     }
+    const navShopBlock = () => {
+      
+      return(<>
+        <div className="blurred_background "></div>
+        <div onMouseLeave={()=>onMouseOverNav()} onMouseEnter={()=>OnHoveredNav(3)} className='background-shop'>
+            <div className='title-shop'>Ваша сумка</div>
+            <img className='img-shop' src={Shopimg} alt="" />
+            <p className='text-1-shop'>Имя товара</p>
+            <p className='text-2-shop'>Цвет</p>
+            <p className='text-3-shop'>Размер</p>
+            <p className='text-4-shop'>Цена</p>
+            <img className='img-korzina' src={KorzinaIMG} alt="" />
+            <p className='text-5-shop'>Кол-во: </p>
+            <hr />
+            <p className='text-6-shop'>Подытог:</p>
+            <p className='text-7-shop'>200рублей</p>
+            <p className='text-8-shop'>Цена за доставку:</p>
+            <p className='text-9-shop'>200рублей</p>
+            <p className='text-10-shop'>Общая:</p>
+            <p className='text-11-shop'>400рублей</p>
+            <button className='btn-shop'>Безопасная оплата</button>
+        </div>
+          </>)
+    }
+    
     const sectionNav = () =>{
 
       if (blockOpened) {
-      
+        document.body.style.overflow = "hidden";
         if(currentNavIndex === 0){
           return navWomenBlock()
         }
@@ -248,6 +282,10 @@ const Header: React.FC = () => {
         else if (currentNavIndex === 2) {
           return navMainAccessory();
         }
+        else if (currentNavIndex === 3) {
+          return navShopBlock();
+        }
+       
 
         return(<>
         <div onMouseLeave={()=>onMouseOverNav()} className='background'>
@@ -255,6 +293,7 @@ const Header: React.FC = () => {
         </>)
       }
       else {
+        document.body.style.overflow = "auto";
         return (<></>)
       }
     }
@@ -285,12 +324,16 @@ return (<>
                     NavJSX(2)
                   }  
                 </div>    
-            
-                  <img src={IMGSearch} className='grid-item IMGSearch' alt="" />
-            
-                  <img src={IMGShop} className='grid-item IMGShop' alt="" />
+              
+                <img src={IMGSearch}  className='grid-item IMGSearch' alt="" />
+              
+                  
+              <div className="NavShop">
+                <img src={IMGShop} onMouseEnter={()=>OnHoveredNav(3)}  className='grid-item IMGShop' alt="" />
 
-                  <img src={IMGLike} className='grid-item IMGLike' alt="" />
+              </div>
+
+                  <img src={IMGLike}  onClick={()=>(navigate('/Like'))} className='grid-item IMGLike' alt="" />
                   
                   
                   <img src={IMGMe}  onClick={()=>(navigate('/Me'))}  className='grid-item IMGMe' alt="" />

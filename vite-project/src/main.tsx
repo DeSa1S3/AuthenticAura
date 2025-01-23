@@ -18,7 +18,10 @@ import {
   Route,
   Link,
 } from 'react-router';
-
+import Reviews from './help/Reviews.tsx'
+import Support from './help/Support.tsx'
+import Search from './selection/Search.tsx'
+import Like from './selection/Like.tsx'
 
 const router = createBrowserRouter([
   {
@@ -82,10 +85,34 @@ const router = createBrowserRouter([
       ),
   },
   {
+    path: '/Search',
+    element: (
+        <Search/>
+    ),
+  },
+  {
+    path: '/Like',
+    element: (
+        <Like/>
+    ),
+  },
+  {
       path: '/Register',
       element: (
           <Register/>
       ),
+  },
+  {
+    path: '/Reviews',
+    element: (
+        <Reviews/>
+    ),
+  },
+  {
+    path: '/Support',
+    element: (
+        <Support/>
+    ),
   },
 ]);
 
