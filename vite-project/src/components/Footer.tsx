@@ -8,8 +8,8 @@ return (<>
     <div className="Footer">
         <div className="Footer-item">
             <h3 className='Footer-title'>Аккаунт</h3>
-            <p className='Footer-text'>Авторизоваться</p>
-            <p className='Footer-text'>Зарегистрироваться</p>
+            <p className='Footer-text'  onClick={()=>(navigate('/Me'))}>Авторизоваться</p>
+            <p className='Footer-text'   onClick={()=>(navigate('/Register'))}>Зарегистрироваться</p>
         </div>
        
         <div className="Footer-item">
@@ -21,7 +21,7 @@ return (<>
         <div className="Footer-item">
             <h3 className='Footer-title'>Помощь</h3>
             <p className='Footer-text'  onClick={()=>(navigate('/Support'))}>Поддержка</p>
-            <p className='Footer-text'  onClick={()=>(navigate('/Reviews'))}>Ваши отзовы</p>
+            <p className='Footer-text'  onClick={()=>(navigate('/Reviews'))}>Ваши отзывы</p>
         </div>
         <div className="Footer-item">
             <p>© 2025 | Gymshark Limited | Все права защищены. |  Мы занимаемся спортом</p>

@@ -22,9 +22,18 @@ namespace Backend_AA
                 options.UseNpgsql(builder.Configuration.GetConnectionString("ServerConn"));
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowOrigin",
+                    builder => builder.WithOrigins("http://localhost:4000")
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
+
             var app = builder.Build();
 
             await EnsureDatabaseInitializedAsync(app);
+            app.UseCors("AllowOrigin");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -67,9 +76,18 @@ namespace Backend_AA
 
             var tableName = "user_table";
 
+            var tableNameSecond = "user_reviews";
+
+            var tableNameThree = "shop_items";
+
+            var tableExistsThree = await CheckIfTableExistsAsync(context, tableNameThree);
+
+            var tableExistsSecond = await CheckIfTableExistsAsync(context, tableNameSecond);
+            
+
             var tableExists = await CheckIfTableExistsAsync(context, tableName);
 
-            if (!tableExists)
+            if (!tableExists && !tableExistsSecond && !tableExistsThree)
             {
                 await context.Database.MigrateAsync();
             }

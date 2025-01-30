@@ -17,6 +17,8 @@ namespace Backend_AA.Model.DBO
 
         public string Password { get; set; }
 
+        public string[] Roles { get; set; }
+
 
     }
 }

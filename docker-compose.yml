@@ -10,6 +10,8 @@ services:
       - ASPNETCORE_URLS=http://+:80;http://+:443
     ports:
       - "8013:80"
+    volumes:
+      - uploads:/app/Img
     restart: unless-stopped
   authleticaura_frontend:
     image: ${DOCKER_REGISTRY-}authleticaura_frontend:0.1
@@ -76,5 +78,6 @@ volumes:
   postgres_data:
   pgadmin_data:
   # rabbitmq_broker:  
-  redis_cache:  
+  redis_cache:
+  uploads:  
   

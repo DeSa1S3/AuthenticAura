@@ -7,11 +7,12 @@ import IMGMe from '../../public/me.png'
 import ImgWomen from '../../public/img-Women.png'
 import ImgMen from '../../public/img-Men.png'
 import IMGAccessory from '../../public/img-Accessory.png'
-import Shopimg from '../../public/TrousersM/TS1.jpg'
 import KorzinaIMG from '../../public/korzina.png'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 
 const Header: React.FC = () => {
+  
+    const [Auth, setAuth]  = useState<boolean>(false)
 
     const [currentNavIndex, setcurrentNavIndex] = useState<number>()
 
@@ -161,7 +162,7 @@ const Header: React.FC = () => {
                 <h3 className='title-Men'>
                   Продукция
                 </h3>
-                <p onClick={()=>(navigate('/TShirt'))} className='text-Men text-dec'>Футболки И Топы</p>
+                <p onClick={()=>(navigate('/TShirt'))} className='text-Men text-dec'>Футболки</p>
                 <p className='text-Men'>Куртки</p>
                 <p onClick={()=>(navigate('/SweatshirtsM'))}  className='text-Men text-dec'>Толстовки</p>
                 <p onClick={()=>(navigate('/Shorts'))} className='text-Men text-dec'>Шорты</p>
@@ -250,7 +251,6 @@ const Header: React.FC = () => {
         <div className="blurred_background "></div>
         <div onMouseLeave={()=>onMouseOverNav()} onMouseEnter={()=>OnHoveredNav(3)} className='background-shop'>
             <div className='title-shop'>Ваша сумка</div>
-            <img className='img-shop' src={Shopimg} alt="" />
             <p className='text-1-shop'>Имя товара</p>
             <p className='text-2-shop'>Цвет</p>
             <p className='text-3-shop'>Размер</p>

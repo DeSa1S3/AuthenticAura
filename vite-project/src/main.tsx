@@ -22,6 +22,8 @@ import Reviews from './help/Reviews.tsx'
 import Support from './help/Support.tsx'
 import Search from './selection/Search.tsx'
 import Like from './selection/Like.tsx'
+import Profile from './profile/Profile.tsx'
+import Admin from './roles/Admin.tsx'
 
 const router = createBrowserRouter([
   {
@@ -112,6 +114,18 @@ const router = createBrowserRouter([
     path: '/Support',
     element: (
         <Support/>
+    ),
+  },
+  {
+    path: '/Profile',
+    element: (
+        <Profile/>
+    ),
+  },
+  {
+    path: '/Admin',
+    element: (
+        <Admin/>
     ),
   },
 ]);

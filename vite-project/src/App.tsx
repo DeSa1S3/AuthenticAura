@@ -11,7 +11,6 @@ import AboutMen from './components/AboutMen.tsx'
 import Footer from './components/Footer.tsx'
 
 
-
 function App() {
   const [count, setCount] = useState(0)
 
